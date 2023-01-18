@@ -41,4 +41,18 @@ const getScoreOfGame = (rolls) => {
   return runningScore;
 };
 
-module.exports = { getScoreOfGame };
+/**
+ * Returns the best score of a set of games.
+ * @param {Array<Array<Number>>} games A 2D array. Each array element is an array of rolls (a game).
+ * @returns the best score of all the given games.
+ */
+const findBestGameScore = (games) => {
+  if (!Array.isArray(games)) {
+    throw new TypeError('Expected argument to be an array of positive integers but found something else.');
+  }
+
+  let scores = games.map((roll) => getScoreOfGame(roll));
+  return Math.max(...scores);
+};
+
+module.exports = { getScoreOfGame, findBestGameScore };
