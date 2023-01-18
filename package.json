@@ -1,0 +1,23 @@
+{
+  "name": "evaluation-1-bowling-game",
+  "version": "1.0.0",
+  "description": "Bowling game score calculation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/souris-ash-mckinsey/evaluation-1-bowling-game.git"
+  },
+  "author": "Souris Ash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/souris-ash-mckinsey/evaluation-1-bowling-game/issues"
+  },
+  "homepage": "https://github.com/souris-ash-mckinsey/evaluation-1-bowling-game#readme",
+  "devDependencies": {
+    "eslint": "^8.32.0",
+    "jest": "^29.3.1"
+  }
+}
