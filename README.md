@@ -1,1 +1,3 @@
-Evaluation 1
+## Evaluation 1: Bowling game
+
+Run `npm test` to run tests.
