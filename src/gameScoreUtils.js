@@ -12,7 +12,6 @@ const getScoreOfGame = (rolls) => {
   let currentRoll = 0;
 
   while (currentRoll < rolls.length) {
-    console.log(currentRoll);
     let nFell = rolls[currentRoll];
 
     // first two cases:
@@ -34,6 +33,8 @@ const getScoreOfGame = (rolls) => {
         runningScore += rolls[currentRoll] + rolls[currentRoll + 1];
         currentRoll += 2;
       }
+      
+      currentRoll += 1;
     }
   }
 
